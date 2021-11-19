@@ -1,0 +1,236 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Valeriy Dutt} \\ \vspace{1pt}
+    \small 07397303403 $|$ 
+    \href{mailto:x@x.com}{\underline{valeriydutt@gmail.com}} $|$ 
+    \href{https://github.com/valeriydutt}{\underline{github.com/valeriydutt}} $|$ \href{https://valeriydutt.dev}{\underline{valeriydutt.dev}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BSc (Hons) Computer Science with Placement Year}{Sept. 2017 -- June 2021}
+      {University of Surrey}{Guildford, England}\\
+      \vspace*{0.25 cm}
+      {\textbf{First Class Honours: 79\%}}\\
+      {Dissertation on Self-Supervised Algorithms and their Application in detecting Diabetic Retinopathy (78\%);}
+      {Deep Learning and Advanced AI (82\%);}
+      {Practical Business Analytics (77\%);}
+      {Computer Security (88\%).}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Placement Training/Coaching Mentor}{Nov. 2020 -- May 2021}
+      {University of Surrey}{}
+      \resumeItemListStart
+        \resumeItem{Prepared and guided a small group of students for their placement year opportunities}
+        \resumeItem{Shared my experience and helped them through the application process}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lab Demonstrator}{Sept. 2020 -- May 2021}
+      {University of Surrey}{}
+      \resumeItemListStart
+        \resumeItem{Supported the delivery of multiple modules at the University of Surrey, including: \\ Advanced Algorithms and Information Retrieval}
+        \resumeItem{Helped a cohort of $2^{nd}$ Year Computer Science students with practical lab sessions}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer (Placement Year)}{July 2019 -- July 2020}
+      {IBM}{IBM Hursley, England}
+      \resumeItemListStart
+        \resumeItem{Worked in the Dev Team of Product Transformation Centre (PTC), Hursley}
+        \resumeItem{Helped design, develop and support multiple tools for IBM's Open Source Clearance}
+        \resumeItem{Worked on a wide spread of tools and software architectures, from back-end Java and micro-services in Angular to front-end application in ReactJS}
+        \resumeItem{Experience maintaining and updating Dockerized applications}
+        \resumeItem{Resolved multiple work-critical issues that re-established PTC's normal function}
+        \resumeItem{Helped design and develop Open Source Analysis tool, a new and more efficient front-end for Open Source Clearance}
+        \resumeItem{Practiced working in Agile and Test-Driven Development processes}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+         \resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Natural Language Processing} $|$ \emph{Python, Flask, AWS, NGINX}}{March 2021 - May 2021}
+          \resumeItemListStart
+           \resumeItem{Developed a Python Flask Web App that would predict movie genre based on a plot summary}
+            \resumeItem{Hosted on an Amazon's EC2 Instance, built with a fully functional CI/CD pipeline}
+        \resumeItemListEnd
+   \resumeSubHeadingListEnd
+   
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Practial Business Analytics} $|$ \emph{R, LaTeX}}{Sept. 2020 -- Dec. 2020}
+          \resumeItemListStart
+            \resumeItem{Led a university group project on practical applications of AI and machine learning}
+            \resumeItem{Participated in the development of an R CLI program that predicts prices for used cars}
+            \resumeItem{Worked through all the stages of data exploration, cleaning and processing}
+            \resumeItem{Produced an industry-quality report, based on CRISP-DM methodology and agile development}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SmartProp} $|$ \emph{Java, PostgreSQL, PHP}}{June 2018 -- Aug. 2020}
+          \resumeItemListStart
+            \resumeItem{Helped develop an ERP web software based on iDempiere, to help business owners manage property}
+            \resumeItem{Partook in extending Financial Accounting functionality of the webapp, utilizing the MVC design pattern}
+            \resumeItem{Implemented 2FA Google Authentication on login for extra security}
+            \resumeItem{Implemented an SMS notification API for message reminders}
+
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+   \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{SMAART} $|$ \emph{Java, ReactJS, Gradle}}{July 2019 -- July 2020}
+       \resumeItemListStart
+       \resumeItem{Developed a Java application with ReactJS and Electron front-end based on a consulting tool by a former IBMer}
+       \resumeItem{Worked alongside UI/UX team to improve user experience }
+       \resumeItem{Maintained and extended the tool based on the feedback from IBM consultants}
+       \resumeItemListEnd
+   \resumeSubHeadingListEnd
+   
+      \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{GitFit} $|$ \emph{Java, Android Studio}}{Feb. 2019 -- May 2019}
+       \resumeItemListStart
+       \resumeItem{Developed an Android mobile application to track fitness goals, count steps and measure hiking routes}
+       \resumeItem{Designed and developed the program alongside a university group}
+       \resumeItem{Extended the program with ability to challenge friends to complete workout goals}
+       \resumeItemListEnd
+   \resumeSubHeadingListEnd
+   
+%-----------PROGRAMMING SKILLS-----------
+\section{Personal Skills}
+\vspace*{-0.5 cm}
+\begin{multicols}{2}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\emph{Technical skills (in order of proficiency)}{:}} \\
+     \textbf{Languages}{: Java, Python, R, C/C++, PHP, JavaScript} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Gradle, Maven, Jenkins, TravisCI} \\
+    }}
+ \end{itemize}
+ 
+ \columnbreak
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frameworks}{: React, Node.js, JUnit, Mocha, Jasmine} \\
+     Comfortable with Linux, Bash Scripting \\
+     \textbf{\emph{Soft Skills}{:}} \\
+     \textbf{Languages}{: Fluent in English, Russian, French} \\
+    }}
+ \end{itemize}
+\end{multicols}
+
+%----------Extracurricular Activities------
+\section{Extracurricular Activities}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Archery Club}{: Represented University of Surrey Team in barebow competitions} \\
+     \textbf{Investment \& Trading}{: Exploring algorithmic trading in spare time (MQL5, Python)} \\
+     \textbf{Maker Space}{: General interest in IoT and low-level electronics, currently building an 8-bit computer from basic components} \\
+    }}
+ \end{itemize}
+\end{document}
